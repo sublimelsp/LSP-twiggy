@@ -1,0 +1,96 @@
+{
+  "contributions": {
+    "settings": [
+      {
+        "file_patterns": [
+          "/LSP-twiggy.sublime-settings"
+        ],
+        "schema": {
+          "$id": "sublime://settings/LSP-twiggy",
+          "definitions": {
+            "PluginConfig": {
+              "properties": {
+                "settings": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "twiggy.autoInsertSpaces": {
+                      "type": "boolean",
+                      "default": true,
+                      "markdownDescription": "Insert spaces inside of `{{ | }}` and `{% | %}`."
+                    },
+                    "twiggy.inlayHints.macroArguments": {
+                      "type": "boolean",
+                      "default": true,
+                      "markdownDescription": "Inlay hints for macro arguments."
+                    },
+                    "twiggy.inlayHints.macro": {
+                      "type": "boolean",
+                      "default": true,
+                      "markdownDescription": "Inlay hints for `{% endmacro %}`."
+                    },
+                    "twiggy.inlayHints.block": {
+                      "type": "boolean",
+                      "default": true,
+                      "markdownDescription": "Inlay hints for `{% endblock %}`."
+                    },
+                    "twiggy.phpExecutable": {
+                      "type": "string",
+                      "scope": "resource",
+                      "default": "php",
+                      "markdownDescription": "Points to the PHP executable."
+                    },
+                    "twiggy.framework": {
+                      "type": "string",
+                      "scope": "resource",
+                      "enum": [
+                        "symfony",
+                        "craft",
+                        "ignore"
+                      ],
+                      "markdownDescription": "Framework to use."
+                    },
+                    "twiggy.symfonyConsolePath": {
+                      "type": "string",
+                      "scope": "resource",
+                      "default": "bin/console",
+                      "markdownDescription": "Path to the Symfony console. See: https://symfony.com/doc/current/templates.html#inspecting-twig-information"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "type": "object",
+          "allOf": [
+            {
+              "$ref": "sublime://settings/LSP-plugin-base"
+            },
+            {
+              "$ref": "sublime://settings/LSP-twiggy#/definitions/PluginConfig"
+            }
+          ]
+        }
+      },
+      {
+        "file_patterns": [
+          "/*.sublime-project"
+        ],
+        "schema": {
+          "properties": {
+            "settings": {
+              "properties": {
+                "LSP": {
+                  "properties": {
+                    "LSP-twiggy": {
+                      "$ref": "sublime://settings/LSP-twiggy#/definitions/PluginConfig"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    ]
+  }
+}

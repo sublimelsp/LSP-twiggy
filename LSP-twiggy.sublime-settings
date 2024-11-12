@@ -1,0 +1,13 @@
+{
+	"command": ["${node_bin}", "${server_path}", "--stdio"],
+	"settings": {
+		"twiggy.autoInsertSpaces": true,
+		"twiggy.inlayHints.macroArguments": true,
+		"twiggy.inlayHints.macro": true,
+		"twiggy.inlayHints.block": true,
+		"twiggy.phpExecutable": "php",
+		"twiggy.framework": "ignore",
+		"twiggy.symfonyConsolePath": "bin/console"
+	},
+	"selector": "text.html.twig"
+}

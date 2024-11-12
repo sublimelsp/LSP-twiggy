@@ -1,0 +1,10 @@
+[
+    {
+        "caption": "Preferences: LSP-twiggy Settings",
+        "command": "edit_settings",
+        "args": {
+            "base_file": "${packages}/LSP-twiggy/LSP-twiggy.sublime-settings",
+            "default": "// Settings in here override those in \"LSP-twiggy/LSP-twiggy.sublime-settings\"\n\n{\n\t$0\n}\n",
+        },
+    },
+]
