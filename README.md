@@ -6,8 +6,7 @@ Provided through [twiggy-language-server](https://github.com/moetelo/twiggy/tree
 
 ### Installation
 
-* Install [LSP](https://packagecontrol.io/packages/LSP) and `LSP-twiggy` via Package Control.
-* Install [Twig syntax higlight package](https://packagecontrol.io/packages/Twig).
+* Install [LSP](https://packagecontrol.io/packages/LSP), [Twig Syntax](https://packagecontrol.io/packages/Twig) and [LSP-twiggy](https://packagecontrol.io/packages/LSP-twiggy) via Package Control.
 * Restart Sublime.
 
 ### Configuration
