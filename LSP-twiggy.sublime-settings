@@ -1,5 +1,4 @@
 {
-	"command": ["${node_bin}", "${server_path}", "--stdio"],
 	"settings": {
 		"twiggy.autoInsertSpaces": true,
 		"twiggy.inlayHints.macroArguments": true,
@@ -9,5 +8,12 @@
 		"twiggy.framework": "ignore",
 		"twiggy.symfonyConsolePath": "bin/console"
 	},
+	// File watching functionality only works with "LSP-file-watcher-chokidar" package installed.
+	"file_watcher": {
+		"patterns": [
+			"**/*.twig"
+		]
+	},
+	"command": ["${node_bin}", "${server_path}", "--stdio"],
 	"selector": "text.html.twig"
 }
