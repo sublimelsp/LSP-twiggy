@@ -6,6 +6,7 @@
 		"twiggy.inlayHints.block": true,
 		"twiggy.phpExecutable": "php",
 		"twiggy.framework": "ignore",
+		"twiggy.vanillaTwigEnvironmentPath": "",
 		"twiggy.symfonyConsolePath": "bin/console"
 	},
 	// File watching functionality only works with "LSP-file-watcher-chokidar" package installed.
