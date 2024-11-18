@@ -2,6 +2,6 @@
   "name": "twiggy",
   "private": true,
   "dependencies": {
-    "twiggy-language-server": "^0.16.1"
+    "twiggy-language-server": "^0.17.0"
   }
 }
