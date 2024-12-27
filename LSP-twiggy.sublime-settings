@@ -7,7 +7,8 @@
 		"twiggy.phpExecutable": "php",
 		"twiggy.framework": "ignore",
 		"twiggy.vanillaTwigEnvironmentPath": "",
-		"twiggy.symfonyConsolePath": "bin/console"
+		"twiggy.symfonyConsolePath": "bin/console",
+		"twiggy.diagnostics.twigCsFixer": true
 	},
 	// File watching functionality only works with "LSP-file-watcher-chokidar" package installed.
 	"file_watcher": {
