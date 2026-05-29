@@ -7,6 +7,7 @@ Provided through [twiggy-language-server](https://github.com/moetelo/twiggy/tree
 ### Installation
 
 * Install [LSP](https://packagecontrol.io/packages/LSP), [Twig Syntax](https://packagecontrol.io/packages/Twig) and [LSP-twiggy](https://packagecontrol.io/packages/LSP-twiggy) via Package Control.
+* (Optional but recommended) Install the [LSP-file-watcher-rust](https://packagecontrol.io/packages/LSP-file-watcher-rust) (or if it doesn't work for some reason then [LSP-file-watcher-chokidar](https://packagecontrol.io/packages/LSP-file-watcher-chokidar)) via Package Control to enable functionality to notify the server about new or changed files.
 * Restart Sublime.
 
 ### Configuration
