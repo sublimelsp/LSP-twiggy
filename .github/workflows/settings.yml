@@ -1,0 +1,23 @@
+name: Check configuration schema changes
+
+on:
+  pull_request:
+    branches:
+      - main
+    paths:
+      - 'language-server/package.json'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pull-requests: write
+
+jobs:
+  check-settings:
+    uses: sublimelsp/workflows/.github/workflows/changed-settings.yaml@v3
+    with:
+      version_file: 'language-server/package.json'
+      version_regexp: '"twiggy-language-server": "([^"]+)"'
+      version_transform: 'v{}'
+    secrets:
+      SUBLIMELSP_APP_PRIVATE_KEY: ${{ secrets.SUBLIMELSP_APP_PRIVATE_KEY }}

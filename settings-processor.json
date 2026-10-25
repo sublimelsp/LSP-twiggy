@@ -1,0 +1,22 @@
+{
+    "input_repository_url": "https://github.com/moetelo/twiggy",
+    "input_repository_json_configuration_path": "packages/vscode/package.json",
+    "transformers": [
+        {
+            "type": "jq",
+            "options": ".contributes.configuration.properties | .[\"twiggy.framework\"].default = \"ignore\" | .[\"twiggy.diagnostics.twigCsFixer\"].default = true"
+        }
+    ],
+    "render_templates": [
+        {
+            "type": "settings",
+            "template_path": "templates/sublime-settings.jinja.json",
+            "output_path": "LSP-twiggy.sublime-settings"
+        },
+        {
+            "type": "schema",
+            "template_path": "templates/sublime-package.jinja.json",
+            "output_path": "sublime-package.json"
+        }
+    ]
+}
