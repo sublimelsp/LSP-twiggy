@@ -13,4 +13,4 @@ jobs:
     with:
       # Provides the Twig syntax, which Sublime Text doesn't include.
       extra-packages: |
-        Sublime-Instincts/BetterTwig@v
+        Twig
