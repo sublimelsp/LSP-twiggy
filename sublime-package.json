@@ -26,7 +26,7 @@
                     "twiggy.diagnostics.twigCsFixer": {
                       "type": "boolean",
                       "default": true,
-                      "markdownDescription": "Use VincentLanglet/Twig-CS-Fixer, if installed."
+                      "markdownDescription": "Use VincentLanglet/Twig-CS-Fixer, if installed. Note: format on save should be disabled since it's buggy."
                     },
                     "twiggy.inlayHints.macroArguments": {
                       "type": "boolean",
@@ -58,7 +58,8 @@
                         "twig",
                         "ignore"
                       ],
-                      "markdownDescription": "Framework to use."
+                      "markdownDescription": "Framework to use.",
+                      "default": "ignore"
                     },
                     "twiggy.vanillaTwigEnvironmentPath": {
                       "type": "string",

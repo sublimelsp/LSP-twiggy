@@ -1,14 +1,24 @@
 {
 	"settings": {
+		// Insert spaces inside of `{{ | }}` and `{% | %}`.
 		"twiggy.autoInsertSpaces": true,
+		// Use VincentLanglet/Twig-CS-Fixer, if installed. Note: format on save should be disabled since it's buggy.
+		"twiggy.diagnostics.twigCsFixer": true,
+		// Inlay hints for macro arguments.
 		"twiggy.inlayHints.macroArguments": true,
+		// Inlay hints for `{% endmacro %}`.
 		"twiggy.inlayHints.macro": true,
+		// Inlay hints for `{% endblock %}`.
 		"twiggy.inlayHints.block": true,
+		// Points to the PHP executable.
 		"twiggy.phpExecutable": "php",
+		// Framework to use.
 		"twiggy.framework": "ignore",
+		// Path to the Twig environment file. To be used with `"twiggy.framework": "twig"`.
+		// See: https://github.com/moetelo/twiggy/issues/52
 		"twiggy.vanillaTwigEnvironmentPath": "",
+		// Path to the Symfony console. See: https://symfony.com/doc/current/templates.html#inspecting-twig-information
 		"twiggy.symfonyConsolePath": "bin/console",
-		"twiggy.diagnostics.twigCsFixer": true
 	},
 	// The path to the server binary used to start the language server.
 	// Use `auto` for the package to manage (install/update) the server automatically.
